@@ -23,6 +23,8 @@
    <!-- 虫眼鏡用のWebFont Awesome を読み込む-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <?php wp_head(); ?>
+    
  </head>
  <body>
   <header class="l-header">
