@@ -1,0 +1,7 @@
+@include tablet  {
+  .c-grayscreen {
+    &.is-open {
+      @include grayscreen ;
+    }
+  }
+}

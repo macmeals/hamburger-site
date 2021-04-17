@@ -1,0 +1,80 @@
+.l-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+    &__top {
+      height: 160px;
+      width: 80vw; //headerの80%
+      display: flex;
+      justify-content: space-between;
+      background-color: #FFF7EF;
+      align-items: center;
+
+      @include tablet { /* ipad対応fronts page */
+         height: 200px;
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+
+
+      }
+    }
+
+    &__bottom {
+      height: 160px;
+      width: 20vw; //headerの20%
+      display: flex;
+      align-items: center;
+      background-color: #f2ede9;
+
+      >h2 {
+        font-size: 34px;
+      }
+      
+
+
+      @include tablet {  /* ipad対応fronts page */
+        background-color:#FFF7EF;
+        height: 200px;
+        width: 20vw;
+        position: absolute;
+        left: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+       
+      
+        &.is-open {
+          width: 40vw;
+          left: 60%;
+          position: fixed;
+          z-index: 200;
+          transition:.6s;
+          
+        }
+
+      }
+      
+      
+    }
+    
+}
+
+// ハンバーガーメニューを開いたとき、メニュー以外の背景を灰色にする
+.l-black {
+   &.is-open {
+     display: block;
+     background-color: #707070;
+     position: fixed;
+     top : 0%;
+     left: 0%;
+     width : 100vw;
+     height: 60px;
+     z-index: 100;
+     opacity: 0;
+  }
+}

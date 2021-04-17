@@ -1,0 +1,70 @@
+//メデイアクエリの管理
+$pc :1201px;        /* PCはWidthが1200pxより大きい */
+$tablet:1200px;     /* タブレットはWidthが1200pxより小さい */
+$smartphone:699px;  /* スマホはWidthが700pxより小さい */
+
+
+// PCのメディアクエリ
+@mixin pc {
+  @media (min-width:($pc)){
+    @content;
+  }
+}
+
+// タブレットのメディアクエリ
+@mixin tablet {
+  @media (max-width:($tablet))  {
+    @content;
+  }
+}
+
+// スマートフォンのメディアクエリ
+@mixin smartphone {
+  @media (max-width:($smartphone)){
+    @content ;
+  }
+}
+//背景の読み込み
+@mixin background ($picture){
+    background-image:($picture) ;
+    background-size: cover;
+    background-position: center;
+
+}
+ 
+//front-pageの「Take Out」と「Eat in」
+@mixin front-page__wrap($picture) {
+  height:640px;
+  width: 32vw;
+  background-image:($picture) ;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+//front-page用の白線(親要素にposition: relative;が必要）
+ @mixin white-line($bottom) {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom:($bottom);
+  width: 60px;
+  height: 1px;
+  background-color: white;
+ }
+
+ //サイトバーを開いた時、灰色の背景を表示
+ @mixin grayscreen {
+  display: block;
+  background-color: #707070;
+  position: fixed;
+  top : 0%;
+  left: 0%;
+  width : 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 1;
+ }

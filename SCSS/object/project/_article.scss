@@ -1,0 +1,689 @@
+.p-article {
+  width: 80vw;
+  
+  // iPad対応 frontpage
+   @include tablet {
+   width: 100vw;
+  }
+   
+    &__top {
+      height: 300px;
+      @include background(url(/img/front-top.png))  ;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      >h2 {
+        font-size: 40px;
+        @include tablet {
+          font-size: 36px;
+          padding-left: 60px;
+        }
+      }
+    }
+
+    &__middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 40px;
+      // smartphone対応 front page
+       @include smartphone {
+        flex-direction: column;
+        padding: 0; } /* スマホ画面はパディングリセット */
+
+      >.p-article__wrap {
+        @include front-page__wrap(url(/img/front-takeout.png));
+        margin-right: 20px;
+
+        // iPad対応 front page
+        @include tablet {
+         width: 40vw;
+         }
+
+        // iPhone対応 front page
+        @include smartphone {
+         width: 80vw;
+         margin: 10px 0px;
+        }
+  
+        > h2 {
+          margin: 20px 10px;
+          color: white;
+          font-size: 80px;
+          position: relative;
+           // iPad対応 front page
+          @include tablet {
+            font-size: 44px;
+          }
+        }
+  
+        >h2:before {
+          @include white-line(-40%) ;
+        }
+        
+      }
+
+       >.p-article__wrap:nth-of-type(2)  {
+        @include front-page__wrap(url(/img/front-eat-in.png));
+        
+        // // iPad対応 frontpage
+        @include tablet {
+          width: 40vw;
+          }
+        
+        // // iPhone対応 front page
+        @include smartphone {
+          width: 80vw;
+          margin: 10px 0px;
+          } 
+       }
+    }
+
+
+    &__box {
+      background-color:rgba(255,255,255,0.8);
+      background-blend-mode:lighten;
+      margin: 10px;
+      padding: 10px;
+      >h3 {
+        margin: 5px 0;
+        font-size: 24px
+      }
+    }
+
+    &__bottom {
+      @include background(url(/img/front-map.png))  ;
+      z-index: 1;
+    
+    }
+
+    &__black__boxs {
+      background-color:rgba(0, 0, 0, 0.4);
+      @include smartphone {
+        height: 640px;
+        }
+    }
+
+    &__black__box {
+      color: white;
+      height: 450px;
+      width: 50vw;
+      background-color:rgba(0, 0, 0, 0.6);
+      padding: 40px ;
+
+      // iPad対応 frontpage
+      @include tablet {
+        width: 100vw;
+      }
+      
+
+      >h3 {
+        margin-bottom: 40px;
+        position: relative;
+        font-size: 36px;
+         // iPad対応 frontpage
+        @include tablet {
+        font-size: 24px;
+        }
+      }
+
+      > p {
+        line-height: 3rem;
+      }
+
+      >h3:before{
+        @include white-line(-25%) ;
+        // iPad対応 frontpage
+        @include tablet {
+        bottom: -50%;
+       }
+      }
+
+
+      
+    }
+}
+////////////////共通sidebar///////////////////////
+.p-aside {
+    &__main {
+      list-style: none;
+      >li {
+        font-size: 24px;
+        line-height: 50px;
+      }
+    }
+
+    &__sub {
+      list-style: none;
+      line-height: 30px;
+      padding:  10px;
+      >li {
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+}
+
+////////////////archive.php & archive-search.php///////////////////////
+.p-archive {
+  width: 80vw;
+
+  // iPad対応 
+  @include tablet {
+    width: 100vw;
+   }
+
+     &__top {
+       @include background(url(/img/front-top.png))  ;
+       height: 300px;
+       display: flex;
+       align-items: center;
+
+     }
+
+     &__menu {
+       display: flex;
+       align-items: center;
+       color:#FFFFFF;
+
+       >h2 {
+         font-size: 40px;
+         padding-left: 60px ;
+       }
+
+       // iPhone対応 
+       @include smartphone {
+        display: table-cell;
+        vertical-align: middle;
+
+        >p {
+          padding-left: 60px ;
+        }
+       }
+
+     }
+
+     &__textall {
+      display: flex;
+      justify-content: center;
+
+     }
+
+     &__text { 
+       display: block;
+       width: 70vw;
+       height: 330px;
+
+       // iPad対応 
+       @include tablet {
+        width: 90vw;
+        height: 330px;
+       }
+
+       // iPhone対応 
+       @include smartphone {
+        width: 90vw;
+        height: 400px;
+        margin-bottom: 20px;
+       }
+
+       > h3 {
+         font-size: 36px;
+         margin: 20px 0;
+       }
+       
+       
+     }
+
+     &__boxes {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 20px;
+
+       @include smartphone {
+        flex-direction: column;
+        align-items: center;
+         
+       }
+
+       > .p-archive__box:nth-of-type(1) , .p-archive__box:nth-of-type(2) {
+         height: 400px;
+         width: 35vw;
+         color: #FFFFFF;
+         font-size: 16px;
+       }
+
+       > .p-archive__box:nth-of-type(1) {
+        @include background(url(/img/Cheeseburger.png))  ;
+
+        @include tablet {
+          width: 45vw;
+        }
+            
+        @include smartphone {
+          width: 90vw;
+        }
+       }
+
+       > .p-archive__box:nth-of-type(2) {
+         background-color: #3c2b1C ;
+         position: relative;
+
+         @include tablet {
+          width: 45vw;
+         }
+
+         @include smartphone {
+          width: 90vw;
+         }
+
+         >h2 {
+          padding: 40px;
+          font-size: 30px;
+         }
+
+         >h3 {
+          padding: 0 40px;
+         }
+    
+         >p {
+          padding: 5px 40px;
+         }
+
+         >button {
+           color: #3c2b1C;
+         }
+
+       }
+     }
+
+
+}
+
+.p-pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 70px 0 30px 0;
+   height: 20px;
+   text-align: center;
+   font-size: 16px;
+
+   @include smartphone {
+   display: none;
+   }
+    
+   &__arrow {
+     margin: 0 10px;
+     font-size: 30px;
+     height: 40px;
+
+   }
+
+   &__link {
+    margin: 0 5px;
+    border: 1px solid;
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+    
+  }
+
+  > .p-pagination__link:nth-of-type(3){
+    background-color:#3c2b1C;
+    color: #FFFFFF;
+  }
+
+}
+
+.p-pagination2 {
+  @include pc {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include smartphone {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 16px;
+  }
+  
+}
+
+// single.phpとpage.php////////////////////////////////////////////////////
+.p-single {
+   width: 80vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   // iPad対応
+   @include tablet {
+    width: 100vw;
+   } 
+
+   &__top {
+    width: 80vw;
+    height: 300px;
+    @include background(url(/img/cheeseburger2.png))  ;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    // iPad対応
+    @include tablet {
+     width: 100vw;
+    } 
+
+    h1 {
+      padding-left: 60px;
+    }
+
+  }
+
+   >h2,h3,h4,h5,h6 {
+     width: 70vw;
+     margin: 20px 0;
+
+     // iPad対応
+     @include tablet {
+      width: 80vw;
+     } 
+
+     // iPhone対応
+     @include smartphone {
+       width: 90vw;
+     }
+   }
+
+   >h2 {
+     margin: 40px 0 20px 0;
+     font-size: 36px;
+   }
+
+   >h3 {
+     font-size: 28px;
+   }
+
+   >h4,h5,h6 {
+     font-size: 20px;
+   }
+
+   >p {
+     width: 70vw;
+     margin: 20px 0;
+
+     // iPad対応
+     @include tablet {
+      width: 80vw;
+     }
+
+      // iPhone対応
+      @include smartphone {
+        width: 90vw;
+      }
+
+     &:nth-of-type(2) {
+        margin: 20px 0 100px 0;
+
+      // iPad対応
+       @include tablet {
+        margin: 40px 0 ;
+       }
+
+     }
+
+    }
+
+   &__quote {
+     width: 70vw;
+     height: 250px;
+     background-color: #f5f5f5;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     margin: 20px 0;
+
+     // iPad対応
+     @include tablet {
+      width: 80vw;
+      height: 350px;
+     }
+
+     // iPhone対応
+     @include smartphone {
+      width: 90vw;
+      height: 350px;
+      }
+
+     >Blockquote {
+       width: 65vw;
+       font-size: 16px;
+
+       // iPad対応
+       @include tablet {
+        width: 75vw;
+       }
+
+       // iPhone対応
+       @include smartphone {
+        width: 85vw;
+       }
+     }
+
+     >p {
+       width: 65vw;
+
+       // iPad対応
+       @include tablet {
+        width: 75vw;
+       }
+
+       // iPhone対応
+       @include smartphone {
+        width: 85vw;
+       }
+     }
+
+     >pre {
+       width: 65vw;
+
+       // iPad対応
+       @include tablet {
+        width: 75vw;
+       }
+     }
+   }
+
+   &__photo {
+     width: 70vw;
+     height: 330px;
+     @include background(url(/img/cheesePoteto.png))  ;
+     background-position: bottom;
+     margin: 30px 0;
+
+     // iPad対応
+     @include tablet {
+      width: 80vw;
+     }
+
+     // iPhone対応
+     @include smartphone {
+      width: 90vw;
+     }
+
+
+   }
+
+   &__phototext {
+     display: flex;
+     margin-bottom: 30px;
+
+     >.p-single__photo{
+      width: 30vw;
+      height: 200px;
+      margin: 0;
+
+      // iPad対応
+      @include tablet {
+        width: 35vw;
+        
+       }
+      // iPhone対応
+      @include smartphone {
+        width: 35vw;
+      }
+  
+     }
+
+     >P {
+       width: 40vw;
+       height: 275px;
+
+         // iPad対応
+       @include tablet {
+        width: 45vw;
+        height: 420px;
+       }
+
+       // iPhone対応
+       @include smartphone {
+        width: 55vw;
+        height: 400px;
+       }
+      
+     }
+   }
+
+   >.p-single__photo:nth-of-type(6) {
+    width: 30vw;
+    height: 200px;
+    @include background(url(/img/cheesePoteto.png))  ;
+    background-position: bottom;
+    margin: 30px 0;
+
+    // iPad対応
+    @include tablet {
+      width: 70vw;
+      height: 400px;
+      margin-bottom: 200px;
+    }
+
+    // iPhone対応
+    @include smartphone {
+      width: 80vw;
+      margin: 30px 0 ;
+     }
+
+
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+    // iPad対応
+    @include tablet {
+      grid-template-columns: 1fr 1fr ;
+    }
+
+    // iPad対応
+    @include smartphone {
+      grid-template-columns:  1fr ;
+    }
+
+    >.p-single__photo {
+      width: 23vw;
+      @include background(url(/img/cheesePoteto.png))  ;
+      background-position: bottom;
+      margin: 0;
+
+      // iPad対応
+      @include tablet {
+        width: 40vw;
+      }
+
+      // iPhone対応
+      @include smartphone {
+        width: 90vw;
+      }
+    }
+  }
+  &__list {
+      width: 70vw;
+      margin-top: 30px ;
+      font-size: 16px;
+  }
+  &__sublist {
+      width: 70vw;
+      margin: 5px 0;
+      padding-left: 10px;
+      font-size: 16px;
+  }
+
+  &__table {
+      height: 280px;
+      margin-bottom: 30px;
+       // iPad対応
+       @include tablet {
+        margin: 20px 0 40px 0;
+       }
+  }
+  
+  &__line {
+      > td { 
+        padding-left: 30px;
+        &:nth-of-type(1){
+          width: 20vw;
+        // iPad対応
+        @include tablet {
+          width: 30vw;
+         }
+        @include smartphone {
+          width: 40vw;
+        }
+
+        }
+        &:nth-of-type(2){
+          width: 50vw;
+        }
+      }
+  }
+  &__button {
+      width: 70vw;
+      margin-bottom: 30px;
+
+      @include tablet {
+        width: 80vw;
+        margin: 0;
+       }
+      
+      @include smartphone {
+        width: 90vw;
+      }
+
+  }
+
+}
+
+///////////page.phpのみ/////////////
+.p-page__top {
+  width: 80vw;
+  height: 300px;
+  @include background(url(/img/shop-photo.png))  ;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  // iPad対応
+  @include tablet {
+   width: 100vw;
+  } 
+}

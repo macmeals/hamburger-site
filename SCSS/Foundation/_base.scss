@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;        /* 1rem ＝ 10pxと全体のコードは変換する */
+}
+
+body {
+  font-family: 'Roboto','M+ C Type-1 (basic latin) Regular','M+ Type-1 (general-j) Regular', sans-serif; /* RobotoとM＋フォントを利用 */
+  color: #707070;
+  overflow-x: hidden;
+  
+}
+
+input {
+  font-family: FontAwesome;
+}
+
+button {
+  border: none;  /* 枠線を消す */
+  outline: none; /* クリックしたときに表示される枠線を消す */
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  border: solid 1px #707070;
+}
+
+h1 {
+  font-size: 64px;
+  @include tablet {
+    font-size: 40px;
+   }
+}
+
+p {
+  font-size: 16px;
+}
+
+pre {
+  font-size: 16px;
+}
+
+table {
+  font-size: 16px;
+}

@@ -1,0 +1,83 @@
+// 検索等のボタン
+ .c-button {  
+  background-color:#f2ede9;
+  border: 1px solid #707070;
+  height: 50px;  
+  width: 100px;  
+  border-radius: 5px;
+  font-size: 16px;
+
+  &__single {
+    background-color:#f2ede9;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 20vw;
+    height: 80px;
+
+    @include tablet {
+      width: 50vw;
+      margin: 0;
+     }
+
+    @include smartphone {
+      width: 90vw;
+
+    }
+
+  }
+}
+
+// Manuという表示（ボタンではないが、同じ名前の「Menu」というボタンがあるためComponentにおく
+.c-hamburgermenu {
+  @include tablet {
+    display: none;
+  }
+
+}
+// Manuを表示させるためのボタン
+.c-hamburgerbutton {
+  @include pc {
+    display: none;
+  }
+  font-size: 34px;  
+  color: #707070; 
+  position: relative; 
+  background-color: #FFF7EF;
+  height: 60px;
+  width: 100px;
+
+  &.is-open {
+        
+    background-color:#FFF7EF;
+    color: #FFF7EF;
+
+    &::before, &::after {
+    content   : "";
+		width     : 40px;
+		height    : 4px;
+		background:#707070;
+    position  : absolute;
+    top: 50px;
+		left      : 5px;
+		display   : block;
+    
+    }
+    &::before {
+      transform: rotate( 45deg );
+    }
+    &::after {
+      transform: rotate( -45deg );  
+    }
+
+  }
+}
+
+.c-circlebutton {
+  width: 150px;
+  height: 40px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: calc(50% - 75px) ;
+  margin-top: 40px;
+  border-radius: 20px;
+}

@@ -1,0 +1,21 @@
+
+// 中の要素の左右のスペースを開ける。
+.u-padding__left__right { 
+  padding: 0 20px;
+}
+
+@include tablet {
+  .u-padding__left__right { 
+    padding: 10px 20px;
+  }
+}
+
+.u-padding__left {
+  padding-left: 20px;
+}
+
+.u-padding__right {
+  padding-right: 20px;
+}
+
+

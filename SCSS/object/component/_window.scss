@@ -1,0 +1,12 @@
+.c-window {
+  background-color: white;
+  border: 1px solid #707070;
+  height: 50px;
+  width: 25vw;
+  border-radius: 5px;
+  font-size: 16px;
+
+  @include tablet {
+    width: 40vw;
+  }
+}
