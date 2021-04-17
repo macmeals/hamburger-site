@@ -1,5 +1,5 @@
 <!-- Head及びheader部分の読み込み -->
-<?php include ('header.php'); ?>
+<?php get_header(); ?>
 
 <main class ="l-main">
  <article class="p-article">
@@ -45,10 +45,10 @@
  </article>
  
  <!-- sidebar部分の読み込み -->
- <?php include ('sidebar.php'); ?>
+ <?php get_sidebar(); ?>
 
 </main>
 
 <!-- footer部分の読み込み -->
-<?php include ('footer.php'); ?>
+<?php get_footer(); ?>
 

@@ -4,5 +4,8 @@
      <p><small>Copyright RaiseTech</small></p>
    </div>
  </footer>
+
+ <?php wp_footer(); ?>
+ 
  </body>
 </html>
