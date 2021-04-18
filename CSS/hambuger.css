@@ -420,6 +420,7 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 100;
   }
 }
 
@@ -559,6 +560,7 @@ table {
 }
 
 .c-hamburgerbutton {
+  z-index: 200;
   font-size: 34px;
   color: #707070;
   position: relative;

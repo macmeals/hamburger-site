@@ -36,6 +36,8 @@
 }
 // Manuを表示させるためのボタン
 .c-hamburgerbutton {
+  z-index: 200;
+  
   @include pc {
     display: none;
   }
