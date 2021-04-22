@@ -8,7 +8,7 @@
    
     &__top {
       height: 300px;
-      @include background(url(/img/front-top.png))  ;
+      @include background(url("../img/front-top.png")) ;
       color: white;
       display: flex;
       align-items: center;
@@ -33,7 +33,7 @@
         padding: 0; } /* スマホ画面はパディングリセット */
 
       >.p-article__wrap {
-        @include front-page__wrap(url(/img/front-takeout.png));
+        @include front-page__wrap(url("../img/front-takeout.png"));
         margin-right: 20px;
 
         // iPad対応 front page
@@ -65,7 +65,7 @@
       }
 
        >.p-article__wrap:nth-of-type(2)  {
-        @include front-page__wrap(url(/img/front-eat-in.png));
+        @include front-page__wrap(url("../img/front-eat-in.png"));
         
         // // iPad対応 frontpage
         @include tablet {
@@ -93,7 +93,7 @@
     }
 
     &__bottom {
-      @include background(url(/img/front-map.png))  ;
+      @include background(url("../img/front-map.png"))  ;
       z-index: 1;
     
     }
@@ -175,7 +175,7 @@
    }
 
      &__top {
-       @include background(url(/img/front-top.png))  ;
+       @include background(url("../img/front-top.png"))  ;
        height: 300px;
        display: flex;
        align-items: center;
@@ -255,7 +255,7 @@
        }
 
        > .p-archive__box:nth-of-type(1) {
-        @include background(url(/img/Cheeseburger.png))  ;
+        @include background(url("../img/Cheeseburger.png"))  ;
 
         @include tablet {
           width: 45vw;
@@ -369,7 +369,7 @@
    &__top {
     width: 80vw;
     height: 300px;
-    @include background(url(/img/cheeseburger2.png))  ;
+    @include background(url("../img/cheeseburger2.png"))  ;
     color: white;
     display: flex;
     align-items: center;
@@ -503,7 +503,7 @@
    &__photo {
      width: 70vw;
      height: 330px;
-     @include background(url(/img/cheesePoteto.png))  ;
+     @include background(url("../img/cheesePoteto.png"))  ;
      background-position: bottom;
      margin: 30px 0;
 
@@ -563,7 +563,7 @@
    >.p-single__photo:nth-of-type(6) {
     width: 30vw;
     height: 200px;
-    @include background(url(/img/cheesePoteto.png))  ;
+    @include background(url("../img/cheesePoteto.png"))  ;
     background-position: bottom;
     margin: 30px 0;
 
@@ -601,7 +601,7 @@
 
     >.p-single__photo {
       width: 23vw;
-      @include background(url(/img/cheesePoteto.png))  ;
+      @include background(url("../img/cheesePoteto.png"))  ;
       background-position: bottom;
       margin: 0;
 
@@ -677,7 +677,7 @@
 .p-page__top {
   width: 80vw;
   height: 300px;
-  @include background(url(/img/shop-photo.png))  ;
+  @include background(url("../img/shop-photo.png"))  ;
   color: white;
   display: flex;
   align-items: center;

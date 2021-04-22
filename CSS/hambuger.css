@@ -652,7 +652,7 @@ table {
 
 .p-article__top {
   height: 300px;
-  background-image: url(/img/front-top.png);
+  background-image: url("../img/front-top.png");
   background-size: cover;
   background-position: center;
   color: white;
@@ -702,7 +702,7 @@ table {
 .p-article__middle > .p-article__wrap {
   height: 640px;
   width: 32vw;
-  background-image: url(/img/front-takeout.png);
+  background-image: url("../img/front-takeout.png");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -757,7 +757,7 @@ table {
 .p-article__middle > .p-article__wrap:nth-of-type(2) {
   height: 640px;
   width: 32vw;
-  background-image: url(/img/front-eat-in.png);
+  background-image: url("../img/front-eat-in.png");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -798,7 +798,7 @@ table {
 }
 
 .p-article__bottom {
-  background-image: url(/img/front-map.png);
+  background-image: url("../img/front-map.png");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -891,7 +891,7 @@ table {
 }
 
 .p-archive__top {
-  background-image: url(/img/front-top.png);
+  background-image: url("../img/front-top.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -993,7 +993,7 @@ table {
 }
 
 .p-archive__boxes > .p-archive__box:nth-of-type(1) {
-  background-image: url(/img/Cheeseburger.png);
+  background-image: url("../img/Cheeseburger.png");
   background-size: cover;
   background-position: center;
 }
@@ -1134,7 +1134,7 @@ table {
 .p-single__top {
   width: 80vw;
   height: 300px;
-  background-image: url(/img/cheeseburger2.png);
+  background-image: url("../img/cheeseburger2.png");
   background-size: cover;
   background-position: center;
   color: white;
@@ -1292,7 +1292,7 @@ table {
 .p-single__photo {
   width: 70vw;
   height: 330px;
-  background-image: url(/img/cheesePoteto.png);
+  background-image: url("../img/cheesePoteto.png");
   background-size: cover;
   background-position: center;
   background-position: bottom;
@@ -1358,7 +1358,7 @@ table {
 .p-single > .p-single__photo:nth-of-type(6) {
   width: 30vw;
   height: 200px;
-  background-image: url(/img/cheesePoteto.png);
+  background-image: url("../img/cheesePoteto.png");
   background-size: cover;
   background-position: center;
   background-position: bottom;
@@ -1406,7 +1406,7 @@ table {
 
 .p-single__grid > .p-single__photo {
   width: 23vw;
-  background-image: url(/img/cheesePoteto.png);
+  background-image: url("../img/cheesePoteto.png");
   background-size: cover;
   background-position: center;
   background-position: bottom;
@@ -1494,7 +1494,7 @@ table {
 .p-page__top {
   width: 80vw;
   height: 300px;
-  background-image: url(/img/shop-photo.png);
+  background-image: url("../img/shop-photo.png");
   background-size: cover;
   background-position: center;
   color: white;
