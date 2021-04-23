@@ -27,11 +27,11 @@
  <body>
   <header class="l-header">
     <div class="l-header__top u-padding__left__right">
-      <h1><a>Hamburger</a></h1>
-      <form>
-        <input class="c-window u-margin__right" type="search" name="search" placeholder=" &#xf002">
-        <input class="c-button" type="submit" name="submit" value="検索">
-      </form>
+      
+      <h1>
+         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+      </h1>
+      <?php get_search_form(); ?>
     </div>
     <div class="l-header__bottom u-padding__left__right">
       <h2 class="c-hamburgermenu">Menu</h2>
