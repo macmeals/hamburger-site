@@ -22,8 +22,8 @@
        wp_enqueue_style( 'mplus-general', '//mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css', array(), '' );          /* 文字フォント：MPlusの読み込み */
        wp_enqueue_style( 'hambuger-style', get_theme_file_uri('/CSS/hambuger.css'), array('robot'), '20210421' ,'all');                /* CSSファイルの読み込み */
        wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('hambuger-style'), '4.7.0' );    /* 文字フォント：WebFont Awesomeの読み込み */
-       wp_enqueue_script( 'hambuger-script', get_theme_file_uri('/js/hamburger.js'), array('fontawesome'), '20210421'  );                    /* JavaScript の読み込み */
-       wp_enqueue_script( 'hambuger-jquery', get_theme_file_uri('js/jquery-3.6.0.min.js'), array('hambuger-script'), '20210421'  );                    /* JQuary の読み込み */
-      
+       wp_enqueue_script( 'jquery');                   /* JQuary（JavaScript） の読み込み */
+       wp_enqueue_script( 'han-jquery', get_theme_file_uri('/js/hamburger.js'), array(), '20210421' ,false  );                    /* JQuary（JavaScript） の読み込み */
+       
    }
    add_action( 'wp_enqueue_scripts', 'hambuger_script' );
