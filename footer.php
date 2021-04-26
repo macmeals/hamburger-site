@@ -1,6 +1,6 @@
 <footer class="l-footer">
    <div class ="p-footer">
-     <p>ショップ情報｜ヒストリー</p>
+     <p><a href="<?php echo home_url('/shop-info');  ?>">ショップ情報</a>｜ヒストリー</p>
      <p><small>Copyright RaiseTech</small></p>
    </div>
  </footer>
