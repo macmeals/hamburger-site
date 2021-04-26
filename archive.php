@@ -7,6 +7,7 @@
            <div class="p-archive__menu u-padding__left__right">
               <h2>Menu:</h2>
               <p>チーズバーガー</p>
+              <!-- <php? get_the_category(); ?> -->
            </div>
        </div>    
        <div class="p-archive__textall">
