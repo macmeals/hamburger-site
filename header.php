@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
  <head>
    <meta charset="utf-8">
-   <title>Hanburger Site</title>
    <meta name= "description" content="一般的なハンバーガーサイトです">
 
    <!-- ブレイクポイントを設定 -->
