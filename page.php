@@ -4,7 +4,7 @@
 <main class ="l-main">
     <article class="p-single">
        <div class="p-page__top u-padding__left__right">
-          <h1>ショップについて</h1>
+          <h1><?php the_title();?></h1>
        </div>
        <h2>見出しh2</h2>
        <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
