@@ -1293,6 +1293,128 @@ table {
   }
 }
 
+.p-single__image > img {
+  width: 70vw;
+  height: 330px;
+  margin: 30px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+@media (max-width: 1200px) {
+  .p-single__image > img {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 699px) {
+  .p-single__image > img {
+    width: 90vw;
+  }
+}
+
+.p-single__imgtxt {
+  width: 70vw;
+  margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+  .p-single__imgtxt {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 699px) {
+  .p-single__imgtxt {
+    width: 90vw;
+  }
+}
+
+.p-single__imgtxt > figure > img {
+  width: 30vw;
+  height: 250px;
+  margin: 30px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+@media (max-width: 1200px) {
+  .p-single__imgtxt > figure > img {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 699px) {
+  .p-single__imgtxt > figure > img {
+    width: 40vw;
+  }
+}
+
+.p-single__imagesmall > img {
+  width: 30vw;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+@media (max-width: 1200px) {
+  .p-single__imagesmall > img {
+    width: 60vw;
+  }
+}
+
+.p-single__grids > div {
+  width: 70vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .p-single__grids > div {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 699px) {
+  .p-single__grids > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.p-single__grids > div > figure > img {
+  width: 23vw;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+@media (max-width: 1200px) {
+  .p-single__grids > div > figure > img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 699px) {
+  .p-single__grids > div > figure > img {
+    width: 90vw;
+  }
+}
+
 .p-single__photo {
   width: 70vw;
   height: 330px;

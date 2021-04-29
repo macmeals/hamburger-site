@@ -500,6 +500,122 @@
      }
    }
 
+   &__image {
+      >img {
+        width: 70vw;
+        height: 330px;
+        margin: 30px 0;
+        object-fit: cover;
+        object-position: 50% bottom;
+       
+        // iPad対応
+        @include tablet {
+         width: 80vw;
+        }
+
+         // iPhone対応
+         @include smartphone {
+          width: 90vw;
+        }
+      }
+   }
+
+   &__imgtxt {
+    width: 70vw; 
+    margin: 10px 0;
+     // iPad対応
+     @include tablet {
+      width: 80vw;
+     }
+      // iPhone対応
+      @include smartphone {
+        width: 90vw;
+      }
+
+
+    >figure {
+      >img {
+        width: 30vw;
+        height: 250px;
+        margin: 30px 0;
+        object-fit: cover;
+        object-position: 50% bottom;
+       
+        // iPad対応
+        @include tablet {
+         width: 35vw;
+        }
+  
+         // iPhone対応
+         @include smartphone {
+          width: 40vw;
+        }
+      }
+    } 
+    
+   }
+
+   &__imagesmall {
+     >img {
+      width: 30vw;
+      height: 200px;
+      object-fit: cover;
+      object-position: 50% bottom;
+
+     // iPad対応
+      @include tablet {
+       width: 60vw;
+      }
+
+
+
+     }
+   }
+
+   &__grids {
+       >div {
+         width: 70vw;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         gap: 20px;
+  
+         // iPad対応
+         @include tablet {
+          grid-template-columns: 1fr 1fr ;
+         }
+  
+         // iPad対応
+         @include smartphone {
+          grid-template-columns:  1fr ;
+         }
+         
+          >figure {
+              >img {
+               width: 23vw;
+               height: 200px;
+               object-fit: cover;
+               object-position: 50% bottom;
+
+               // iPad対応
+               @include tablet {
+                 width: 40vw;
+               }
+
+               @include smartphone {
+                 width: 90vw;
+               }
+
+              }
+          }
+         
+
+       }
+   }
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
    &__photo {
      width: 70vw;
      height: 330px;
@@ -516,8 +632,6 @@
      @include smartphone {
       width: 90vw;
      }
-
-
    }
 
    &__phototext {
@@ -687,3 +801,4 @@
    width: 100vw;
   } 
 }
+

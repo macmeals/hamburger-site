@@ -9,7 +9,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
  </head>
- <body>
+ <body <?php body_class(); ?>>
   <header class="l-header">
     <div class="l-header__top u-padding__left__right">
       <!-- サイトタイトルを出力 -->
