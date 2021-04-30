@@ -490,14 +490,6 @@
        }
      }
 
-     >pre {
-       width: 65vw;
-
-       // iPad対応
-       @include tablet {
-        width: 75vw;
-       }
-     }
    }
 
    &__image {
@@ -566,8 +558,6 @@
       @include tablet {
        width: 60vw;
       }
-
-
 
      }
    }
@@ -658,134 +648,11 @@
                            width: 50vw;
                          }
                   }
-
                  }
-
-
-
             }
         }
    }
-
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////
-   &__photo {
-     width: 70vw;
-     height: 330px;
-     @include background(url("../img/cheesePoteto.png"))  ;
-     background-position: bottom;
-     margin: 30px 0;
-
-     // iPad対応
-     @include tablet {
-      width: 80vw;
-     }
-
-     // iPhone対応
-     @include smartphone {
-      width: 90vw;
-     }
-   }
-
-   &__phototext {
-     display: flex;
-     margin-bottom: 30px;
-
-     >.p-single__photo{
-      width: 30vw;
-      height: 200px;
-      margin: 0;
-
-      // iPad対応
-      @include tablet {
-        width: 35vw;
-        
-       }
-      // iPhone対応
-      @include smartphone {
-        width: 35vw;
-      }
   
-     }
-
-     >P {
-       width: 40vw;
-       height: 275px;
-
-         // iPad対応
-       @include tablet {
-        width: 45vw;
-        height: 420px;
-       }
-
-       // iPhone対応
-       @include smartphone {
-        width: 55vw;
-        height: 400px;
-       }
-      
-     }
-   }
-
-   >.p-single__photo:nth-of-type(6) {
-    width: 30vw;
-    height: 200px;
-    @include background(url("../img/cheesePoteto.png"))  ;
-    background-position: bottom;
-    margin: 30px 0;
-
-    // iPad対応
-    @include tablet {
-      width: 70vw;
-      height: 400px;
-      margin-bottom: 200px;
-    }
-
-    // iPhone対応
-    @include smartphone {
-      width: 80vw;
-      margin: 30px 0 ;
-     }
-
-
-  }
-
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-
-    // iPad対応
-    @include tablet {
-      grid-template-columns: 1fr 1fr ;
-    }
-
-    // iPad対応
-    @include smartphone {
-      grid-template-columns:  1fr ;
-    }
-
-    >.p-single__photo {
-      width: 23vw;
-      @include background(url("../img/cheesePoteto.png"))  ;
-      background-position: bottom;
-      margin: 0;
-
-      // iPad対応
-      @include tablet {
-        width: 40vw;
-      }
-
-      // iPhone対応
-      @include smartphone {
-        width: 90vw;
-      }
-    }
-  }
   &__list {
       width: 70vw;
       margin-top: 30px ;
