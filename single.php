@@ -7,7 +7,7 @@
           <h1><?php the_title();?></h1>
        </div>
        <?php the_content(); ?>;
-       <h2>見出し</h2>
+       <!-- <h2>見出し</h2>
        <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
        <h3>見出しh3</h3>
        <h4>見出しh4</h4>
@@ -68,8 +68,8 @@
                   &lt;/body&gt;
              &lt;/html&gt;
           </pre>
-       </div>
-       <table class="p-single__table">
+       </div> --> 
+        <!-- <table class="p-single__table">
           <tr class="p-single__line">
              <td>テーブル</td>
              <td>テーブル</td>
@@ -86,13 +86,13 @@
              <td>テーブル</td>
              <td>テーブル</td>
           </tr>          
-       </table>
-       <div class=p-single__button>
+       </table> 
+      <div class=p-single__button>
           <button class="c-button__single">
                 ボタン
           </button>
-       </div>
-       <p>boldboldboldboldboldboldbold</p>
+       </div> -->
+       <!-- <p>boldboldboldboldboldboldbold</p> -->
     </article>
 
      <!-- sidebar部分の読み込み -->
