@@ -7,16 +7,16 @@
           <h1><?php the_title();?></h1>
        </div>
 
+       <!-- コンテンツ内容をループで表示する。 -->
        <?php if(have_posts()): ?>
            <?php while(have_posts()): the_post(); ?>
                <?php the_content(); ?>
            <?php endwhile; ?>
        <?php else: ?>
                <?php echo "記事がありません。" ?>
-        <?php endif; ?>
+       <?php endif; ?>
 
 
-       
     </article>
 
      <!-- sidebar部分の読み込み -->
