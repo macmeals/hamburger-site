@@ -29,51 +29,7 @@
 
 
 <!-- WPのループ -->
-       <div class="p-archive__boxes">
-           <img src="<?php echo get_template_directory_uri(); ?>/img/Cheeseburger.png" alt ="burger" class="p-archive__image" >
-           <div class="p-archive__explain">
-              <h2>チーズバーガー消すやつ</h2>
-              <h3>小見出しが入ります</h3>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <button class=c-circlebutton>
-                 詳しく見る
-              </button>
-           </div>
-       </div>
-
-       <div class="p-archive__boxes">
-           <div class="p-archive__box"></div>
-           <div class="p-archive__box">
-              <h2>チーズバーガー消すやつ</h2>
-              <h3>小見出しが入ります</h3>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <button class=c-circlebutton>
-                 詳しく見る
-              </button>
-           </div>
-       </div>
-       <div class="p-archive__boxes">
-           <div class="p-archive__box"></div>
-           <div class="p-archive__box">
-              <h2>ダブルチーズバーガー消すやつ</h2>
-              <h3>小見出しが入ります</h3>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <button class=c-circlebutton>
-                 詳しく見る
-              </button>
-           </div>
-       </div>
-       <div class="p-archive__boxes">
-           <div class="p-archive__box"></div>
-           <div class="p-archive__box">
-              <h2>スペシャルチーズバーガー消すやつ</h2>
-              <h3>小見出しが入ります</h3>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <button class=c-circlebutton>
-                 詳しく見る
-              </button>
-           </div>
-       </div>
+     
        <ul class="p-pagination">
            <li >page 1/10</li>
            <li class="p-pagination__arrow">«</li>
