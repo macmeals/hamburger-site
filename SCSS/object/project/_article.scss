@@ -191,6 +191,11 @@
          font-size: 40px;
          padding-left: 60px ;
        }
+       > p {
+               >a {
+                   color: rgba(255,255,255,0.8);
+                   }
+       }
 
        // iPhone対応 
        @include smartphone {
@@ -199,6 +204,7 @@
 
         >p {
           padding-left: 60px ;
+
         }
        }
 
@@ -244,50 +250,47 @@
        @include smartphone {
         flex-direction: column;
         align-items: center;
-         
+       }
+      }
+
+     &__image {
+      height: 400px;
+      width: 35vw;
+      @include tablet {
+        width: 45vw;
+      }
+          
+      @include smartphone {
+        width: 90vw;
+      }
+     }
+
+     &__explain {
+      height: 400px;
+      width: 35vw;
+      color: #FFFFFF;
+      font-size: 16px;
+      background-color: #3c2b1C ;
+      position: relative;
+
+      @include tablet {
+       width: 45vw;
+      }
+
+      @include smartphone {
+        width: 90vw;
        }
 
-       > .p-archive__box:nth-of-type(1) , .p-archive__box:nth-of-type(2) {
-         height: 400px;
-         width: 35vw;
-         color: #FFFFFF;
-         font-size: 16px;
-       }
-
-       > .p-archive__box:nth-of-type(1) {
-        @include background(url("../img/Cheeseburger.png"))  ;
-
-        @include tablet {
-          width: 45vw;
-        }
-            
-        @include smartphone {
-          width: 90vw;
-        }
-       }
-
-       > .p-archive__box:nth-of-type(2) {
-         background-color: #3c2b1C ;
-         position: relative;
-
-         @include tablet {
-          width: 45vw;
-         }
-
-         @include smartphone {
-          width: 90vw;
-         }
-
-         >h2 {
+      >h2 {
           padding: 40px;
           font-size: 30px;
-         }
+          }
 
-         >h3 {
+      >h3 {
           padding: 0 40px;
-         }
+          }
     
-         >p {
+      >p {
           padding: 5px 40px;
          }
 
@@ -295,9 +298,23 @@
            color: #3c2b1C;
          }
 
-       }
-     }
+    // archiveのループ処理で二つ目のアーカイブでaタグが出てしまうのため、その為の修飾を行う。
+      >a {
+           >h2 {
+               padding: 40px;
+               font-size: 30px;
+           }
 
+           >h3 {
+               padding: 0 40px;
+          }
+  
+           >p {
+               padding: 5px 40px;
+              }
+       }
+
+     }
 
 }
 
