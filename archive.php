@@ -6,8 +6,7 @@
        <div class="p-archive__top">
            <div class="p-archive__menu u-padding__left__right">
               <h2>Menu:</h2>
-              <p>チーズバーガー:<?php the_category(' '); ?></p>
-
+              <p><?php the_category(' '); ?></p>
            </div>
        </div>    
        <div class="p-archive__textall">
@@ -16,10 +15,36 @@
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div> 
        </div>
+
+<!-- WPのループ -->
+
+      <?php
+       if (have_posts()) : 
+         while (have_posts()) :
+       the_post();
+        get_template_part('each-cat-post');
+         endwhile;
+        endif;
+       ?>
+
+
+<!-- WPのループ -->
+       <div class="p-archive__boxes">
+           <img src="<?php echo get_template_directory_uri(); ?>/img/Cheeseburger.png" alt ="burger" class="p-archive__image" >
+           <div class="p-archive__explain">
+              <h2>チーズバーガー消すやつ</h2>
+              <h3>小見出しが入ります</h3>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <button class=c-circlebutton>
+                 詳しく見る
+              </button>
+           </div>
+       </div>
+
        <div class="p-archive__boxes">
            <div class="p-archive__box"></div>
            <div class="p-archive__box">
-              <h2>チーズバーガー</h2>
+              <h2>チーズバーガー消すやつ</h2>
               <h3>小見出しが入ります</h3>
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               <button class=c-circlebutton>
@@ -30,7 +55,7 @@
        <div class="p-archive__boxes">
            <div class="p-archive__box"></div>
            <div class="p-archive__box">
-              <h2>ダブルチーズバーガー</h2>
+              <h2>ダブルチーズバーガー消すやつ</h2>
               <h3>小見出しが入ります</h3>
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               <button class=c-circlebutton>
@@ -41,7 +66,7 @@
        <div class="p-archive__boxes">
            <div class="p-archive__box"></div>
            <div class="p-archive__box">
-              <h2>スペシャルチーズバーガー</h2>
+              <h2>スペシャルチーズバーガー消すやつ</h2>
               <h3>小見出しが入ります</h3>
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               <button class=c-circlebutton>
