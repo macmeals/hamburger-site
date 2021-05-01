@@ -21,11 +21,10 @@
 
     @include smartphone {
       width: 90vw;
-
     }
-
-  }
-}
+   }
+  
+ }
 
 // Manuという表示（ボタンではないが、同じ名前の「Menu」というボタンがあるためComponentにおく
 .c-hamburgermenu {
