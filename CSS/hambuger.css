@@ -363,6 +363,10 @@ h1 {
   font-size: 64px;
 }
 
+h1 > a {
+  color: #707070;
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 40px;
@@ -873,6 +877,10 @@ table {
   line-height: 50px;
 }
 
+.p-aside__main > li > a {
+  color: #707070;
+}
+
 .p-aside__sub {
   list-style: none;
   line-height: 30px;
@@ -882,6 +890,10 @@ table {
 .p-aside__sub > li {
   font-size: 20px;
   line-height: 40px;
+}
+
+.p-aside__sub > li > a {
+  color: #707070;
 }
 
 .p-archive {
@@ -1046,19 +1058,6 @@ table {
 
 .p-archive__explain > button {
   color: #3c2b1C;
-}
-
-.p-archive__explain > a > h2 {
-  padding: 40px;
-  font-size: 30px;
-}
-
-.p-archive__explain > a > h3 {
-  padding: 0 40px;
-}
-
-.p-archive__explain > a > p {
-  padding: 5px 40px;
 }
 
 .p-pagination {

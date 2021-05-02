@@ -5,7 +5,7 @@
               <h3>小見出しが入ります</h3>
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               <button class=c-circlebutton>
-              <a href="<?php the_permalink(); ?>">詳しく見る<a>
+              <a href="<?php the_permalink(); ?>">詳しく見る</a>
               </button>
            </div>
 </div>

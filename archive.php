@@ -16,19 +16,43 @@
           </div> 
        </div>
 
+<!-- ページネーションの設定 -->
+       
+       
+       <?php
+        $paged = get_query_var('paged')? get_query_var('paged') : 1;
+        $information= new WP_Query( array(
+                    'post_type' => 'post',
+                    'paged' => $paged,
+                    'post_status' => 'publish',
+                    'posts_per_page' => 3,
+                ));
+               ?>
+        
+
 <!-- WPのループ -->
 
-      <?php
-       if (have_posts()) : 
-         while (have_posts()) :
-       the_post();
-        get_template_part('each-cat-post');
-         endwhile;
-        endif;
-       ?>
-
+      
+       <?php    if ( have_posts()) : 
+                  while ( have_posts()) :  the_post();
+                         get_template_part('each-cat-post');
+                  endwhile;
+                endif;
+                wp_reset_postdata();
+        ?>
 
 <!-- WPのループ -->
+
+<!-- ページネーション -->
+
+        <?php
+                if( function_exists('wp_pagenavi') ) {
+                   wp_pagenavi(array('query' => $information));
+                  }
+               
+        ?>
+
+
      
        <ul class="p-pagination">
            <li >page 1/10</li>
