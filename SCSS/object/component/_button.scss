@@ -81,4 +81,8 @@
   left: calc(50% - 75px) ;
   margin-top: 40px;
   border-radius: 20px;
+
+  > a {
+    color: #707070;
+  }
 }

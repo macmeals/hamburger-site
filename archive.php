@@ -15,65 +15,25 @@
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div> 
        </div>
-
-<!-- ページネーションの設定 -->
        
-       
-       <?php
-        $paged = get_query_var('paged')? get_query_var('paged') : 1;
-        $information= new WP_Query( array(
-                    'post_type' => 'post',
-                    'paged' => $paged,
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3,
-                ));
-               ?>
-        
+    <!-- WPのループ -->
 
-<!-- WPのループ -->
-
-      
        <?php    if ( have_posts()) : 
                   while ( have_posts()) :  the_post();
                          get_template_part('each-cat-post');
                   endwhile;
                 endif;
-                wp_reset_postdata();
         ?>
+     <!-- WPのループ -->
 
-<!-- WPのループ -->
+     <!-- WPのプラグイン「WP_Paginate」を利用。見た目はWP_Paginateの管理コンソールからカスタムcssで設定 -->
+      <?php if(function_exists('wp_paginate')) { wp_paginate(); } ?>
 
-<!-- ページネーション -->
+      <div class="p-pagination2">
+          <?php previous_posts_link( '＜＜前へ' ); ?>
+          <?php next_posts_link('＞＞次へ'); ?>
+      </div>
 
-        <?php
-                if( function_exists('wp_pagenavi') ) {
-                   wp_pagenavi(array('query' => $information));
-                  }
-               
-        ?>
-
-
-     
-       <ul class="p-pagination">
-           <li >page 1/10</li>
-           <li class="p-pagination__arrow">«</li>
-           <li class="p-pagination__link">1</li>
-           <li class="p-pagination__link">2</li>
-           <li class="p-pagination__link">3</li>
-           <li class="p-pagination__link">4</li>
-           <li class="p-pagination__link">5</li>
-           <li class="p-pagination__link">6</li>
-           <li class="p-pagination__link">7</li>
-           <li class="p-pagination__link">8</li>
-           <li class="p-pagination__link">9</li> 
-           <li class="p-pagination__arrow">»</li>
-       </ul>
-       <!-- スマートフォン向けのページネーション -->
-        <ul class="p-pagination2">
-           <li>«前へ</li>
-           <li>次へ»</li>
-           
-        </ul>
     </article>
 
     <!-- sidebar部分の読み込み -->
