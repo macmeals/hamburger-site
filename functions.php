@@ -14,6 +14,7 @@
        add_theme_support( 'menus' );                  /*サイドバー用のカスタムメニューを許可  */
        add_theme_support( 'editor-styles' );   //editor-style適応
 	    add_editor_style( 'editor-style.css' ); //editor-style適応
+       add_theme_support( 'automatic-feed-links' ) ;
    
        }
     add_action( 'after_setup_theme', 'hamburger_theme_support' );
