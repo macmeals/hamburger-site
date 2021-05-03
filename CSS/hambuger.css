@@ -1600,6 +1600,10 @@ table {
           align-items: center;
 }
 
+.p-footer > p > a {
+  color: #FFFFFF;
+}
+
 @media (max-width: 1200px) {
   .p-footer {
     font-size: 16px;
