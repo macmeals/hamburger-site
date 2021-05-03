@@ -15,41 +15,25 @@
               <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div> 
        </div>
+       
+    <!-- WPのループ -->
 
-<!-- WPのループ -->
+       <?php    if ( have_posts()) : 
+                  while ( have_posts()) :  the_post();
+                         get_template_part('each-cat-post');
+                  endwhile;
+                endif;
+        ?>
+     <!-- WPのループ -->
 
-      <?php
-       if (have_posts()) : 
-         while (have_posts()) :
-       the_post();
-        get_template_part('each-cat-post');
-         endwhile;
-        endif;
-       ?>
+     <!-- WPのプラグイン「WP_Paginate」を利用。見た目はWP_Paginateの管理コンソールからカスタムcssで設定 -->
+      <?php if(function_exists('wp_paginate')) { wp_paginate(); } ?>
 
+      <div class="p-pagination2">
+          <?php previous_posts_link( '＜＜前へ' ); ?>
+          <?php next_posts_link('＞＞次へ'); ?>
+      </div>
 
-<!-- WPのループ -->
-     
-       <ul class="p-pagination">
-           <li >page 1/10</li>
-           <li class="p-pagination__arrow">«</li>
-           <li class="p-pagination__link">1</li>
-           <li class="p-pagination__link">2</li>
-           <li class="p-pagination__link">3</li>
-           <li class="p-pagination__link">4</li>
-           <li class="p-pagination__link">5</li>
-           <li class="p-pagination__link">6</li>
-           <li class="p-pagination__link">7</li>
-           <li class="p-pagination__link">8</li>
-           <li class="p-pagination__link">9</li> 
-           <li class="p-pagination__arrow">»</li>
-       </ul>
-       <!-- スマートフォン向けのページネーション -->
-        <ul class="p-pagination2">
-           <li>«前へ</li>
-           <li>次へ»</li>
-           
-        </ul>
     </article>
 
     <!-- sidebar部分の読み込み -->

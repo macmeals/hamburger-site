@@ -151,6 +151,10 @@
       >li {
         font-size: 24px;
         line-height: 50px;
+        >a {
+          color: #707070
+        } 
+
       }
     }
 
@@ -161,6 +165,9 @@
       >li {
         font-size: 20px;
         line-height: 40px;
+        >a {
+          color: #707070
+        } 
       }
     }
 }
@@ -298,22 +305,6 @@
            color: #3c2b1C;
          }
 
-    // archiveのループ処理で二つ目のアーカイブでaタグが出てしまうのため、その為の修飾を行う。
-      >a {
-           >h2 {
-               padding: 40px;
-               font-size: 30px;
-           }
-
-           >h3 {
-               padding: 0 40px;
-          }
-  
-           >p {
-               padding: 5px 40px;
-              }
-       }
-
      }
 
 }
@@ -331,26 +322,26 @@
    display: none;
    }
     
-   &__arrow {
-     margin: 0 10px;
-     font-size: 30px;
-     height: 40px;
+  //  &__arrow {
+  //    margin: 0 10px;
+  //    font-size: 30px;
+  //    height: 40px;
 
-   }
+  //  }
 
-   &__link {
-    margin: 0 5px;
-    border: 1px solid;
-    width: 25px;
-    height: 25px;
-    padding-top: 2px;
+  //  &__link {
+  //   margin: 0 5px;
+  //   border: 1px solid;
+  //   width: 25px;
+  //   height: 25px;
+  //   padding-top: 2px;
     
-  }
+  // }
 
-  > .p-pagination__link:nth-of-type(3){
-    background-color:#3c2b1C;
-    color: #FFFFFF;
-  }
+  // > .p-pagination__link:nth-of-type(3){
+  //   background-color:#3c2b1C;
+  //   color: #FFFFFF;
+  // }
 
 }
 
@@ -367,6 +358,10 @@
     justify-content: space-between;
     margin: 30px;
     font-size: 16px;
+    > a {
+       color: #707070;
+
+    }
   }
   
 }

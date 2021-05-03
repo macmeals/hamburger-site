@@ -363,6 +363,10 @@ h1 {
   font-size: 64px;
 }
 
+h1 > a {
+  color: #707070;
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 40px;
@@ -613,6 +617,10 @@ table {
   left: calc(50% - 75px);
   margin-top: 40px;
   border-radius: 20px;
+}
+
+.c-circlebutton > a {
+  color: #707070;
 }
 
 @media (max-width: 1200px) {
@@ -873,6 +881,10 @@ table {
   line-height: 50px;
 }
 
+.p-aside__main > li > a {
+  color: #707070;
+}
+
 .p-aside__sub {
   list-style: none;
   line-height: 30px;
@@ -882,6 +894,10 @@ table {
 .p-aside__sub > li {
   font-size: 20px;
   line-height: 40px;
+}
+
+.p-aside__sub > li > a {
+  color: #707070;
 }
 
 .p-archive {
@@ -1048,19 +1064,6 @@ table {
   color: #3c2b1C;
 }
 
-.p-archive__explain > a > h2 {
-  padding: 40px;
-  font-size: 30px;
-}
-
-.p-archive__explain > a > h3 {
-  padding: 0 40px;
-}
-
-.p-archive__explain > a > p {
-  padding: 5px 40px;
-}
-
 .p-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1081,25 +1084,6 @@ table {
   .p-pagination {
     display: none;
   }
-}
-
-.p-pagination__arrow {
-  margin: 0 10px;
-  font-size: 30px;
-  height: 40px;
-}
-
-.p-pagination__link {
-  margin: 0 5px;
-  border: 1px solid;
-  width: 25px;
-  height: 25px;
-  padding-top: 2px;
-}
-
-.p-pagination > .p-pagination__link:nth-of-type(3) {
-  background-color: #3c2b1C;
-  color: #FFFFFF;
 }
 
 @media (min-width: 1201px) {
@@ -1125,6 +1109,9 @@ table {
             justify-content: space-between;
     margin: 30px;
     font-size: 16px;
+  }
+  .p-pagination2 > a {
+    color: #707070;
   }
 }
 
