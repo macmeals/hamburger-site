@@ -11,9 +11,9 @@
                                   'gallery', 
                                   'caption',
        ));
-       add_theme_support( 'menus' );                  /*サイドバー用のカスタムメニューを許可  */
-       add_theme_support( 'editor-styles' );   //editor-style適応
-	    add_editor_style( 'editor-style.css' ); //editor-style適応
+       
+       add_theme_support( 'editor-styles' );          //editor-style適応
+	    add_editor_style( 'editor-style.css' );        //editor-style適応
        add_theme_support( 'automatic-feed-links' ) ;
    
        }
@@ -59,5 +59,12 @@
    }
     add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
   
+  // サイト全体のコンテンツ横幅を指定。→PCでMAX表示される様にする。
+    if ( ! isset( $content_width ) ) {$content_width = 1920;}
 
 
+  //サイトバーの表示 
+    function hambuger_menu() {
+      register_nav_menu( 'side-navigation', 'Side Navigation' );
+    }
+    add_action( 'after_setup_theme', 'hambuger_menu' );
