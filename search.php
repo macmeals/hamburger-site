@@ -26,11 +26,7 @@
         ?>
 
         <?php else : ?>
-            <div class="col-full">
-                <div class="wrap-col">
-                    <p>検索キーワードに該当する記事がありませんでした。</p>
-                </div>
-            </div>
+                    <p>検索キーワードに該当するメニューがありませんでした。</p>
         <?php endif; ?>
 
         <!-- WPのプラグイン「WP_Paginate」を利用。見た目はWP_Paginateの管理コンソールからカスタムcssで設定 -->
