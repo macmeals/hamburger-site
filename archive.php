@@ -2,7 +2,8 @@
 <?php get_header(); ?>
 
 <main class ="l-main">
-    <article class="p-archive">
+    <!-- <article class="p-archive"> -->
+    <article <?php post_class('p-archive'); ?>>
        <div class="p-archive__top">
            <div class="p-archive__menu u-padding__left__right">
               <h2>Menu:</h2>

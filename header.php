@@ -9,7 +9,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
  </head>
- <body <?php body_class(); ?>>
+ <body <?php body_class(); ?>><?php wp_body_open(); ?>
   <header class="l-header">
     <div class="l-header__top u-padding__left__right">
       <!-- サイトタイトルを出力 -->
@@ -24,6 +24,9 @@
       <button class="c-hamburgerbutton  is-hamburger">Menu</button>
     </div>
    <div class="c-grayscreen"></div>
+
+   <!-- シングルページのコメントに関するスクリプトでハンバーガーサイトに関係ないのですが、ThemeCheckの為記述 -->
+   <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
    
    <?php wp_head(); ?>
    

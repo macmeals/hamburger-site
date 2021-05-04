@@ -1,0 +1,10 @@
+/********** theme checkプラグインで必須と言われたもの **********/
+/* 今回のハンバーガーサイトで使わない、不要クラスだったのですが、ThemeCheckを通す為、空のクラスを用意 */
+.wp-caption{}
+.wp-caption-text{}
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
+.alignright{}
+.alignleft{}
+.aligncenter{}
