@@ -1,12 +1,13 @@
 
-.l-body {
-  overflow: hidden;
-}
+// .l-body {
+//   overflow-x: hidden;
+// }
 
 
 .l-main {
   display: flex;
   position: relative;
+  overflow-x: hidden;
 
 
 }
