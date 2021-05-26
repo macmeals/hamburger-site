@@ -6,6 +6,6 @@
  </footer>
 
  <?php wp_footer(); ?>
- 
+ </div>  <!-- overflow-x: hiddenの為のdivタブ -->
  </body>
 </html>

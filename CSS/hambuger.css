@@ -488,6 +488,10 @@ table {
   opacity: 0;
 }
 
+.l-body {
+  overflow: hidden;
+}
+
 .l-main {
   display: -webkit-box;
   display: -ms-flexbox;
