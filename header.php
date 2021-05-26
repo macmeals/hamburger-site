@@ -10,6 +10,7 @@
  
  </head>
  <body <?php body_class(); ?>><?php wp_body_open(); ?>
+  <div class="l-body"> <!-- overflow-x: hiddenの為のdivタブ -->
   <header class="l-header">
     <div class="l-header__top u-padding__left__right">
       <!-- サイトタイトルを出力 -->

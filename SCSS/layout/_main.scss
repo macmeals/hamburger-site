@@ -1,3 +1,9 @@
+
+.l-body {
+  overflow: hidden;
+}
+
+
 .l-main {
   display: flex;
   position: relative;
@@ -13,12 +19,11 @@
 
   @include tablet {
     /* ハンバーガーメニューの実装の為、基本的には隠す */
-    // position: absolute;
+    position: absolute;
     left: 100%;  
     
 
     &.is-open {
-    position: absolute;
     transition:.6s;
     left:60%;
     height: 100%;
