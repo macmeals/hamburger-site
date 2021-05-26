@@ -487,15 +487,12 @@ table {
   opacity: 0;
 }
 
-.l-body {
-  overflow-x: hidden;
-}
-
 .l-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  overflow-x: hidden;
 }
 
 .l-aside {
